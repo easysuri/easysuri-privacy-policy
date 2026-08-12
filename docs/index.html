@@ -162,16 +162,19 @@
         Backup data is stored in an encoded, compressed format with an integrity check, and is protected by Google
         Cloud’s security measures, including encryption in transit and at rest. When you sign in to the same account
         again, your backup can be restored to your device.</p>
-      <p>Your data is linked to your account. If you sign out and sign in with a different account, the App will show
-        the data associated with that account; each account’s data is kept separate.</p>
+      <p>Your data is linked to your account. When you sign out, your local data is removed from the device; it can be
+        restored from your backup when you sign in to the same account again. If you sign in with a different account,
+        the App will show the data associated with that account; each account’s data is kept separate.</p>
       <p>Apart from these backups, we do not store or retain your tracking data on our servers. Local data remains on
-        your device unless you delete it, clear the App’s data, uninstall the App, or otherwise remove it.</p>
+        your device unless you sign out, delete it, clear the App’s data, uninstall the App, or otherwise remove
+        it.</p>
       <p>We implement reasonable security measures to protect information within the App. However, no method of
         electronic storage is completely secure.</p>
 
       <h2>4. Data Retention</h2>
-      <p>Your locally stored data remains on your device until you choose to delete it, clear the App’s data, uninstall
-        the App, or otherwise remove it from your device.</p>
+      <p>Your locally stored data remains on your device until you sign out, delete it, clear the App’s data,
+        uninstall the App, or otherwise remove it from your device. Signing out removes local data from your device,
+        but your cloud backup is retained as described below.</p>
       <p>For backups, we keep only your most recent backup: each new backup replaces the previous one in Firebase
         Firestore. Your backup is retained so that it can be restored when you sign in to the same account again, and
         is deleted when you delete your account. You may also delete your backup from within the App or request deletion by contacting us
