@@ -155,12 +155,15 @@
 
       <h2>3. Data Storage & Security</h2>
       <p>For EasySuri 2.0, information entered into the App, including menstrual cycle records, period type labels,
-        daily logs, notes, and Qada tracking data, is stored locally on your device.</p>
+        daily logs, notes, and Qada tracking data, is stored locally on your device and associated with your signed-in
+        account.</p>
       <p>While you are signed in, your tracking data — including cycle records, daily logs, notes, and Qada tracking
-        data — is automatically backed up to Firebase Firestore, a cloud service provided by Google. Backup data is
-        stored in an encoded, compressed format with an integrity check, and is protected by Google Cloud’s security
-        measures, including encryption in transit and at rest. When you sign in again, your backup can be restored to
-        your device.</p>
+        data — is automatically backed up from time to time to Firebase Firestore, a cloud service provided by Google.
+        Backup data is stored in an encoded, compressed format with an integrity check, and is protected by Google
+        Cloud’s security measures, including encryption in transit and at rest. When you sign in to the same account
+        again, your backup can be restored to your device.</p>
+      <p>Your data is linked to your account. If you sign out and sign in with a different account, the App will show
+        the data associated with that account; each account’s data is kept separate.</p>
       <p>Apart from these backups, we do not store or retain your tracking data on our servers. Local data remains on
         your device unless you delete it, clear the App’s data, uninstall the App, or otherwise remove it.</p>
       <p>We implement reasonable security measures to protect information within the App. However, no method of
@@ -170,8 +173,8 @@
       <p>Your locally stored data remains on your device until you choose to delete it, clear the App’s data, uninstall
         the App, or otherwise remove it from your device.</p>
       <p>For backups, we keep only your most recent backup: each new backup replaces the previous one in Firebase
-        Firestore. Your backup is retained so that it can be restored when you sign in again, and is deleted when you
-        delete your account. You may also delete your backup from within the App or request deletion by contacting us
+        Firestore. Your backup is retained so that it can be restored when you sign in to the same account again, and
+        is deleted when you delete your account. You may also delete your backup from within the App or request deletion by contacting us
         at the email below.</p>
       <p>Support-related information, such as your email address and communications with us, may be retained only for
         as long as necessary to provide support, resolve your request, or comply with applicable legal obligations.</p>
